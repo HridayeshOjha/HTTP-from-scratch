@@ -1,0 +1,19 @@
+{
+  "name": "serverfromscratch",
+  "version": "1.0.0",
+  "description": "building server from scratch",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node main.js"
+  },
+  "author": "shadowwalker",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  },
+  "keywords": []
+}
