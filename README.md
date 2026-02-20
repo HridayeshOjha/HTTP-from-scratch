@@ -18,7 +18,7 @@ request -> framework -> response
 In reality, HTTP is a strict text protocol running over a streaming transport (TCP). Data does not arrive as full messages. It arrives in arbitrary chunks, 
 and the server must reconstruct meaning from incomplete data while respecting the rules defined in the RFC.
 
-I build this project to understand:
+This project helps to understand:
 
 - How TCP differs from message-based communication
 - Why HTTP parsing requires a state machine
@@ -63,7 +63,7 @@ I build this project to understand:
                                                                streams the response back chunk-by-chunk, and verifies integrity using trailers
   
 
-- curl http://localhost:42069 / curl http://localhost:42069/myproblem / curl http://localhost:42069/yourproblem --> these are some other for text/html response. here server parses the request
+- curl http://localhost:42069 / curl http://localhost:42069/myproblem / curl http://localhost:42069/yourproblem --> these are some other for HTTP structured response according to HTTP/1.1. here server parses the request
                                                                                                                     and sends a proper response structured according to RFC guidelines of HTTP/1.1
   
 
